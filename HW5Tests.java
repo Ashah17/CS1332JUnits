@@ -40,7 +40,7 @@ public class HW5Tests {
     public void testBuildHeapNullData() {
         //throws error if the array list is null
 
-        ArrayList<Integer> data = new ArrayList<>();
+        ArrayList<Integer> data = null;
 
         assertThrows(IllegalArgumentException.class, () -> {
             heap = new MaxHeap<>(data);
